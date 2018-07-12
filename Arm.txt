@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Arm {
+    public static void main(String args[])
+    {
+        int n, nu, num=0, rem;
+        Scanner scan = new Scanner(System.in);
+		
+        System.out.print("Enter integer : ");
+        n = scan.nextInt();
+		
+        nu = n;
+		
+        while(nu != 0)
+        {
+            rem = nu%10;
+            num = num + rem*rem*rem;
+            nu = nu/10;
+        }
+        if(num == n)
+        {
+            System.out.println("No. is Armstrong");
+        }
+        else
+        {
+            System.out.println("No. is not Armstrong");
+        }    
+    }
+}

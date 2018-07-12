@@ -1,0 +1,21 @@
+
+public class Findd {
+    public static void main(String[] args) {
+        int[] num = {1,4,6,7,8,9,10};
+        int toFind = 4;
+        boolean found = false;
+
+        for (int n : num) {
+            if (n == toFind) {
+                found = true;
+                break;
+            }
+        }
+
+        if(found)
+            System.out.println(toFind + " is found.");
+        else
+            System.out.println(toFind + " is not found.");
+    }
+}
+
